@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Road Trips in Georgia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Stepantsminda_and_Mount_Kazbek.jpg/1920px-Stepantsminda_and_Mount_Kazbek.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    nav button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .phone a {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+    }
+    .phone a:hover {
+      text-decoration: underline;
+    }
+    .image {
+      margin: 1rem 0;
+    }
+    .image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Family Road Trips in Georgia</h1>
+  <p>Affordable and Flexible Car Rental for Families</p>
+</header>
+
+<nav>
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('ge')">ქართული</button>
+  <button onclick="setLanguage('ru')">Русский</button>
+  <button onclick="setLanguage('ar')">العربية</button>
+</nav>
+
+<div class="container" id="content">
+  <!-- Content will be inserted here -->
+</div>
+
+<footer>
+  <p>&copy; 2025 Family Road Trips Georgia. All rights reserved.</p>
+</footer>
+
+<script>
+const content = {
+  en: `
+    <h2>Reliable 7-Seater Minivans for Your Family Adventures</h2>
+    <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Toyota_Voxy_2021_Navy_Blue.jpg/800px-Toyota_Voxy_2021_Navy_Blue.jpg" alt="Family in a Toyota Voxy Navy Blue"></div>
+    <p>Rent a Toyota Voxy or similar vehicles. More affordable and flexible than big rental companies.</p>
+    <div class="phone">
+      <a href="https://wa.me/995511235424" target="_blank">WhatsApp: +995 511 235 424</a>
+      <a href="viber://chat?number=%2B995511235424" target="_blank">Viber: +995 511 235 424</a>
+      <a href="https://t.me/+995511235424" target="_blank">Telegram: +995 511 235 424</a>
+    </div>
+  `,
+  ge: `
+    <h2>საიმედო 7-ადგილიანი მინივენები თქვენი ოჯახის თავგადასავლებისთვის</h2>
+    <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Toyota_Voxy_2021_Navy_Blue.jpg/800px-Toyota_Voxy_2021_Navy_Blue.jpg" alt="ოჯახი Toyota Voxy-ით"></div>
+    <p>დაქირავეთ Toyota Voxy ან მსგავსი მანქანები. უფრო იაფი და მოქნილი, ვიდრე დიდი კომპანიები.</p>
+    <div class="phone">
+      <a href="https://wa.me/995511235424" target="_blank">WhatsApp: +995 511 235 424</a>
+      <a href="viber://chat?number=%2B995511235424" target="_blank">Viber: +995 511 235 424</a>
+      <a href="https://t.me/+995511235424" target="_blank">Telegram: +995 511 235 424</a>
+    </div>
+  `,
+  ru: `
+    <h2>Надежные минивэны на 7 мест для вашей семьи</h2>
+    <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Toyota_Voxy_2021_Navy_Blue.jpg/800px-Toyota_Voxy_2021_Navy_Blue.jpg" alt="Семья в Toyota Voxy"></div>
+    <p>Аренда Toyota Voxy или аналогичных автомобилей. Дешевле и гибче, чем крупные компании.</p>
+    <div class="phone">
+      <a href="https://wa.me/995511235424" target="_blank">WhatsApp: +995 511 235 424</a>
+      <a href="viber://chat?number=%2B995511235424" target="_blank">Viber: +995 511 235 424</a>
+      <a href="https://t.me/+995511235424" target="_blank">Telegram: +995 511 235 424</a>
+    </div>
+  `,
+  ar: `
+    <h2>سيارات ميني فان موثوقة بـ 7 مقاعد لعائلتك</h2>
+    <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Toyota_Voxy_2021_Navy_Blue.jpg/800px-Toyota_Voxy_2021_Navy_Blue.jpg" alt="عائلة في تويوتا فوكسي"></div>
+    <p>استئجار تويوتا فوكس أو سيارات مماثلة. أرخص وأكثر مرونة من الشركات الكبيرة.</p>
+    <div class="phone">
+      <a href="https://wa.me/995511235424" target="_blank">واتساب: +995 511 235 424</a>
+      <a href="viber://chat?number=%2B995511235424" target="_blank">فايبر: +995 511 235 424</a>
+      <a href="https://t.me/+995511235424" target="_blank">تيليجرام: +995 511 235 424</a>
+    </div>
+  `
+};
+
+function setLanguage(lang) {
+  document.getElementById('content').innerHTML = content[lang];
+}
+
+// Default language
+setLanguage('en');
+</script>
+
+</body>
+</html>
+
